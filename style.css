@@ -1,0 +1,51 @@
+.group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+.item {
+	flex: 1;
+	margin: 10px;
+}
+
+h1 {
+	color: #000;
+	font-family: Tahoma;
+}
+
+form label {
+	display: block;
+	color: #000;
+	font-family: Tahoma;
+}
+
+form input,
+form textarea {
+	border-radius: 5px;
+	font-family: Tahoma;
+	width: 95%;
+	margin-bottom: 20px;
+}
+
+form textarea {
+	height: 160px;
+}
+
+form button {
+	display: block;
+	padding: 10px 16px;
+	border-radius: 10px;
+	border: 0;
+	font-family: Tahoma;
+	font-size: 16px;
+	background: #000;
+	color: #fff;
+	margin: 0 8px 10px 0;
+}
+
+@media all and (min-width: 800px) {
+	.group {
+		flex-direction: column;
+	}
+}

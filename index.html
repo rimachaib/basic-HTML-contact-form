@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Functional Contact Form</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<h1>Contact Me</h1>
+		<div class="group">
+			<div class="item">
+				<form action="#" method="POST">
+					<label for="user-name">Name:</label>
+					<input
+						id="user-name"
+						type="text"
+						name="name"
+						maxlength="20"
+						autofocus="on"
+						placeholder="What can I call you?"
+					/>
+
+					<label for="user-email">Email:</label>
+					<input
+						id="user-email"
+						type="text"
+						name="email"
+						maxlength="35"
+						placeholder="Where can I respond back to you?"
+					/>
+
+					<label for="user-message">Message:</label>
+					<textarea
+						id="user-message"
+						name="message"
+						required
+						maxlength="500"
+						placeholder="I'd love to hear your thoughts!"
+					></textarea>
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
