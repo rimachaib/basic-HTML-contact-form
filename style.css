@@ -1,51 +1,64 @@
 .group {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 100px;
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 100px;
 }
 
 .item {
-	flex: 1;
-	margin: 10px;
+ flex: 1;
+ margin: 10px;
 }
 
 h1 {
-	color: #000;
-	font-family: Tahoma;
+ text-align: center;
+ color: #000;
+ font-family: Tahoma;
 }
 
 form label {
-	display: block;
-	color: #000;
-	font-family: Tahoma;
+ margin: 5px 0px 5px 0px;
+ display: block;
+ color: #000;
+ font-family: Tahoma;
+}
+
+form input {
+ height: 20px;
 }
 
 form input,
 form textarea {
-	border-radius: 5px;
-	font-family: Tahoma;
-	width: 95%;
-	margin-bottom: 20px;
+ border-radius: 5px;
+ border-style: solid;
+ border-width: medium;
+ border-color: #736f6f;
+ font-family: Tahoma;
+ width: 95%;
+ margin-bottom: 20px;
+ padding: 10px;
 }
 
 form textarea {
-	height: 160px;
+ border-style: solid;
+ border-width: medium;
+ display: block;
+ height: 160px;
 }
 
 form button {
-	display: block;
-	padding: 10px 16px;
-	border-radius: 10px;
-	border: 0;
-	font-family: Tahoma;
-	font-size: 16px;
-	background: #000;
-	color: #fff;
-	margin: 0 8px 10px 0;
+ display: block;
+ padding: 10px 16px;
+ border-radius: 5px;
+ border: 0;
+ font-family: Tahoma;
+ font-size: 16px;
+ background: #000;
+ color: #fff;
+ margin: 0 8px 10px 0;
 }
 
 @media all and (min-width: 800px) {
-	.group {
-		flex-direction: column;
-	}
+ .group {
+  flex-direction: column;
+ }
 }
