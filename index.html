@@ -10,8 +10,11 @@
   <h1>Contact Me</h1>
   <div class="group">
    <div class="item">
+	   <!--The <form>‘s action attribute determines where the form’s information goes.-->
+		<!--The <form>‘s method attribute determines how the information is sent and processed.-->   
     <form action="#" method="POST">
-     <label for="user-name">Name:</label>
+	 <label for="user-name">Name:</label>
+	 <!--Setting type to "text" creates a single row field for text input-->
      <input
       id="user-name"
       type="text"
@@ -31,14 +34,16 @@
       required
      />
 
-     <label for="user-message">Message:</label>
+	 <label for="user-message">Message:</label>
+	 <!--The required attribute added to an <input> element ensures-->
      <textarea
       id="user-message"
       name="message"
-      required
       maxlength="500"
-      placeholder="I'd love to hear your thoughts!"
-     ></textarea>
+	  placeholder="I'd love to hear your thoughts!"
+	  required
+	 ></textarea>
+	 <!--Setting type to "submit" creates a submit button-->
      <button type="submit">Submit</button>
      <button type="reset">Reset</button>
     </form>
